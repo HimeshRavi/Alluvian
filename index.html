@@ -10,6 +10,7 @@
 
         <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCeE_fyfK0GdtaHf5KYPQXOmYaKFWllyRE&callback=initialize" async defer></script>
 
         <!-- Bootstrap core CSS -->
         <link href="mystyle.css" rel="stylesheet">
@@ -40,13 +41,22 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="" id="nav-home">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#statsDIV">Statistics</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Disabled</a>
+                        <a class="nav-link" href="#noticeDIV">Findings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#solutionDIV">Solution</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#impactDIV">Impact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contactDIV">Contact Us</a>
                     </li>
                 </ul>
             </div>
@@ -58,8 +68,8 @@
                     <img src="images/road-lights.jpg">
                     <div class="container">
                         <div class="carousel-caption d-none d-md-block text-left">
-                            <h1>Landing Page</h1>
-                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            <h1>Making Roads Great Again.</h1>
+                            <p>Making the world's most liveable city an even better place to live - one road at a time, towards a more cleaner, greener and peaceful world.</p>
                         </div>
                     </div>
                 </div>
@@ -69,19 +79,19 @@
         <div class="container marketing">
 
             <!-- Three columns of text below -->
-            <div class="row">
+            <div class="row" id="statsDIV">
                 <div class="col-lg-4">
-                    <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+                    <img class="rounded-circle" src="images/statistics.png" alt="Generic placeholder image" width="140" height="140">
                     <h2>Stat 1</h2>
                     <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
                 </div><!-- /.col-lg-4 -->
                 <div class="col-lg-4">
-                    <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+                    <img class="rounded-circle" src="images/statistics.png" alt="Generic placeholder image" width="140" height="140">
                     <h2>Stat 2</h2>
                     <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
                 </div><!-- /.col-lg-4 -->
                 <div class="col-lg-4">
-                    <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+                    <img class="rounded-circle" src="images/statistics.png" alt="Generic placeholder image" width="140" height="140">
                     <h2>Stat 3</h2>
                     <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
                 </div><!-- /.col-lg-4 -->
@@ -92,49 +102,58 @@
 
             <hr class="featurette-divider">
 
-            <div class="row featurette">
+            <div class="row featurette" id="noticeDIV">
                 <div class="col-md-7">
-                    <h2 class="featurette-heading">What we have noticed with the data?<span class="text-muted">It'll blow your mind.</span></h2>
+                    <h2 class="featurette-heading">What we have noticed with the data? <span class="text-muted">It'll blow your mind.</span></h2>
                     <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
                 </div>
                 <div class="col-md-5">
-                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+                    <img class="featurette-image img-fluid mx-auto" src="images/findings.png" alt="Generic placeholder image">
                 </div>
             </div>
 
             <hr class="featurette-divider">
 
-            <div class="row featurette">
+            <div class="row featurette" id="solutionDIV">
                 <div class="col-md-7 order-md-2">
-                    <h2 class="featurette-heading">How we can reduce the traffic problem?<span class="text-muted">See for yourself.</span></h2>
-                    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                    <h2 class="featurette-heading">How we can reduce the traffic problem? <span class="text-muted">See for yourself.</span></h2>
+                    <p class="lead">
+                    <div class="row">
+                        <div class="col" id="show">Radio Button selection description.</div>
+                        <div class="col">
+                            <p><input type='radio' name='content_type' value='1' />&nbsp;Melbourne CBD Boundary</p>
+                            <p><input type='radio' name='content_type' value='2' />&nbsp;CBD Roundabout</p>
+                            <p><input type='radio' name='content_type' value='3' />&nbsp;Camera Locations</p>
+                            <p><input type='radio' name='content_type' value='4' />&nbsp;Default Map</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-5 order-md-1">
-                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+                    <div id="map"></div>
                 </div>
             </div>
 
             <hr class="featurette-divider">
 
-            <div class="row featurette">
+            <div class="row featurette" id="impactDIV">
                 <div class="col-md-7">
                     <h2 class="featurette-heading">Community impact <span class="text-muted">Checkmate.</span></h2>
                     <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
                 </div>
                 <div class="col-md-5">
-                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+                    <img class="featurette-image img-fluid mx-auto" src="images/Community-Impact.jpg" alt="Generic placeholder image">
                 </div>
             </div>
 
             <hr class="featurette-divider">
 
-            <div class="row featurette">
+            <div class="row featurette" id="contactDIV">
                 <div class="col-md-7 order-md-2">
-                    <h2 class="featurette-heading">Contact Us. <span class="text-muted">See for yourself.</span></h2>
+                    <h2 class="featurette-heading">Contact Us. <span class="text-muted">If we left an impression.</span></h2>
                     <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
                 </div>
                 <div class="col-md-5 order-md-1">
-                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+                    <img class="featurette-image img-fluid mx-auto" src="images/contact-us.jpg" alt="Generic placeholder image">
                 </div>
             </div>
 
