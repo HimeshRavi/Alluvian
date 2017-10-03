@@ -10117,7 +10117,7 @@ if("undefined"==typeof jQuery)throw new Error("Bootstrap's JavaScript requires j
 
 // ===== Scroll to Top ====
 function topScroll() {
-    $('#return-to-top').click(function() {      // When arrow is clicked
+    $('#return-to-top').click(function() {      // When 'Back to Top' is clicked
         $('body,html').animate({
             scrollTop : 0                       // Scroll to top of body
         }, 500);                                // Scroll delay time
