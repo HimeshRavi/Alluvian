@@ -10116,6 +10116,7 @@ if("undefined"==typeof jQuery)throw new Error("Bootstrap's JavaScript requires j
 }())
 
 // ===== Scroll to Top ====
+$(document).ready(function() {
 function topScroll() {
     $('#return-to-top').click(function() {      // When 'Back to Top' is clicked
         $('body,html').animate({
@@ -10124,11 +10125,8 @@ function topScroll() {
         return false;
     });
 }
-
-$(document).ready(function() {
     topScroll();
 });
-topScroll();
 
 function doAlert(){
     alert('Under Construction');
