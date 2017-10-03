@@ -10129,3 +10129,7 @@ $(document).ready(function() {
     topScroll();
 });
 topScroll();
+
+function doAlert(){
+    alert('Under Construction');
+}
