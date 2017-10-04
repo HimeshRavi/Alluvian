@@ -161,7 +161,7 @@ figure img{
 }
 .findings{
 }
-.findings.contebt{
+.findings.contet{
   padding-left: 1rem;
 }
 .findings h2{
@@ -177,6 +177,17 @@ figure img{
   margin-bottom: 1rem;
 }
 
+.solution {
+
+}
+.solution h1{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.solution p{
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
 
 /* no-gutters Class Rules */
 .row.no-gutters {
