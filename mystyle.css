@@ -127,3 +127,64 @@ body {
     padding: 1em;
     border: solid;
 }
+
+.hero{
+  background-image: url("images/road-lights.jpg");
+  background-position: center;
+  min-height: 87vh;
+  color: white;
+}
+.hero h1{
+  font-size: 3rem;
+  margin-top: 3rem;
+}
+.hero p{
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+figure{
+  display:block;
+  margin:auto;
+  text-align: center;
+  max-width: 240px;
+  padding-bottom: 20px;
+}
+figure img{
+    width: 80%;
+}
+
+
+
+.background-grey{
+  background-color: #F8F8F8;
+}
+.findings{
+}
+.findings.contebt{
+  padding-left: 1rem;
+}
+.findings h2{
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.findings p{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.findings img{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+
+/* no-gutters Class Rules */
+.row.no-gutters {
+   margin-right: 0;
+   margin-left: 0;
+}
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+   padding-right: 0;
+   padding-left: 0;
+}
