@@ -1,24 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
+        <title>Alluvian - Make Roads Great Again</title>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1  shrink-to-fit=no">
         <meta name="description" content="">
         <meta name="author" content="">
-
-        <title>Alluvian - Make Roads Great Again</title>
-
-        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
-
-        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-
-        <script src="myscript.js" type="text/javascript"></script>
-
-        <!-- Bootstrap core CSS -->
         <link href="mystyle.css" rel="stylesheet">
+        <script language="JavaScript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script language="JavaScript" type="text/javascript" src="myscript.js" type="text/javascript"></script>        
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCeE_fyfK0GdtaHf5KYPQXOmYaKFWllyRE&callback=initialize" async defer></script>
+        <script language="JavaScript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+        <script language="JavaScript" type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Favicon -->
         <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
         <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
@@ -28,7 +24,7 @@
         <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
         <link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
         <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="192x192" href="images/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="images/android-icon-192x192.png">
         <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
         <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
@@ -37,8 +33,7 @@
         <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
     </head>
-
-    <body>
+    <body>      
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
             <a class="navbar-brand" href="#">Alluvian</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -68,83 +63,114 @@
             </div>
         </nav>
 
-        <div class="jumbotron hero">
-            <h1 class="text-center">Making Roads Great Again.</h1>
-            <p class="lead">Making the world's most liveable city an even better place to live - one road at a time, towards a more cleaner, greener and peaceful world.</p>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/road-lights.jpg">
+                    <div class="container">
+                        <div class="carousel-caption d-none d-md-block text-left">
+                            <h1>Making Roads Great Again.</h1>
+                            <p>Making the world's most liveable city an even better place to live - one road at a time, towards a more cleaner, greener and peaceful world.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class=".container">
-            <div class="row no-gutters">
-                <figure class="justify-center">
-                    <img src="images/statistics.png" alt="Generic placeholder image">
-                    <figcaption>
-                        <p>During peek hours Melbourne’s travel times can be increased by more then 60%</p>
-                    </figcaption>
-                </figure>
+        <div class="container marketing">
 
-                <figure>
-                    <img src="images/statistics.png" alt="Generic placeholder image">
-                    <figcaption>
-                        <p>By 2030, congestion is expected to cost every Melbourne resident $1,700 a year.</p>
-                    </figcaption>
-                </figure>
+            <!-- Three columns of text below -->
+            <div class="row" id="statsDIV">
+                <div class="col-lg-4">
+                    <img class="rounded-circle" src="images/statistics.png" alt="Generic placeholder image" width="140" height="140">
+                    <h2>Stat 1</h2>
+                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <img class="rounded-circle" src="images/statistics.png" alt="Generic placeholder image" width="140" height="140">
+                    <h2>Stat 2</h2>
+                    <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <img class="rounded-circle" src="images/statistics.png" alt="Generic placeholder image" width="140" height="140">
+                    <h2>Stat 3</h2>
+                    <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                </div><!-- /.col-lg-4 -->
+            </div><!-- /.row -->
 
-                <figure>
-                    <img src="images/statistics.png" alt="Generic placeholder image">
-                    <figcaption>
-                        <p>over 30 per cent of car trips occur in congested conditions</p>
-                    </figcaption>
-                </figure>
-            </div>
 
-            <div class="row background-grey findings no-gutters">
+            <!-- START THE FEATURETTES -->
 
-                <div class="col-xs-12 col-md-7">
-                    <h2 class="featurette-heading text-center">We have noticed that …</h2>
-                    <p class="lead">Doing nothing is now will result in taking drastic actions in future.</p>
-                    <p>Building more roads only tempory releaves congestion. <small>Previouse experience tells us this is not a long term solution</small></p>
-                    <p>Building more transport infrastructure to fix road congestion without managing demand is financially and environmentally unsustainable.</p>
-                    <p>Reducing the number of cars on the road will have a big impact  on comute times.</p>
-                    <p>Pricing can spread demand, improve the efficiency and reliability of travel, reduce the costs of goods and services, reduce emissions and improve amenity.</p>
+            <hr class="featurette-divider">
+
+            <div class="row featurette" id="noticeDIV">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">What we have noticed with the data? <span class="text-muted">It'll blow your mind.</span></h2>
+                    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
                 </div>
-                <div class="col-xs-12 col-md-5">
+                <div class="col-md-5">
                     <img class="featurette-image img-fluid mx-auto" src="images/findings.png" alt="Generic placeholder image">
                 </div>
             </div>
 
-            <div class="row solution">
-                <div class="col-xs-12 col-sm-12">
-                    <h1 class="text-center">How to reduce Melbourne's traffic congestion problems?</h1>
-                    <p class="lead text-center">Reduce the number of cars on the road.</p>
-                    <p class=text-center>People dont want to give up using there cars, so how do we convince pople to use other modes of transport?</p>
-                    <p><mark class="text-uppercase">simple..</mark> a pay as you use model that incurrages people to take passengers or seek alternative transportation to avoid extra costs.</p>
+            <hr class="featurette-divider">
+
+            <div class="row featurette" id="solutionDIV">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading">How we can reduce the traffic problem? <span class="text-muted">See for yourself.</span></h2>
+                    <p class="lead">
+                    <div class="row">
+                        <div class="col" id="show">Radio Button selection description.</div>
+                        <div class="col">
+                            <p><input type='radio' name='content_type' value='1' />&nbsp;Melbourne CBD Boundary</p>
+                            <p><input type='radio' name='content_type' value='2' />&nbsp;CBD Roundabout</p>
+                            <p><input type='radio' name='content_type' value='3' />&nbsp;Camera Locations</p>
+                            <p><input type='radio' name='content_type' value='4' />&nbsp;Default Map</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <div id="map"></div>
                 </div>
             </div>
-            <div class="row" label="map">
 
-            </div>
-            <div class="row text-center" label="solution steps">
-                <div class="col-xs-12 col-sm-3 col-sm-offset-1 ">
-                    <h1 class="uppercase">Step 1</h1>
+            <hr class="featurette-divider">
+
+            <div class="row featurette" id="impactDIV">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">Community impact <span class="text-muted">Checkmate.</span></h2>
+                    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
                 </div>
-                <div class="col-xs-12 col-sm-10 col-sm-offset-1 text-right">
-                    <h2>
-                        Change the outer roads around the cbd into a massive 6 lane roundabout
-                    </h2>
+                <div class="col-md-5">
+                    <img class="featurette-image img-fluid mx-auto" src="images/Community-Impact.jpg" alt="Generic placeholder image">
                 </div>
             </div>
 
-        </div>
+            <hr class="featurette-divider">
 
-        <!-- FOOTER -->
-        <footer>
-            <!-- Scroll to Top -->
-            <a href="javascript:topScroll();" class="float-right" id="return-to-top">Back to Top</a>
-            <p>&copy; 2017 Alluvian &middot; <a href="javascript: doAlert();" id="privacy">Privacy</a> &middot; <a href="javascript: doAlert();" id="terms">Terms</a></p>
-        </footer>
+            <div class="row featurette" id="contactDIV">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading">Contact Us. <span class="text-muted">If we left an impression.</span></h2>
+                    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <img class="featurette-image img-fluid mx-auto" src="images/contact-us.jpg" alt="Generic placeholder image">
+                </div>
+            </div>
 
-    <!-- /.container -->
+            <hr class="featurette-divider">
+
+            <!-- /END THE FEATURETTES -->
+
+
+            <!-- FOOTER -->
+            <footer>
+                <!-- Scroll to Top -->
+                <a href="javascript:topScroll();" class="float-right" id="return-to-top">Back to Top</a>
+                <p>&copy; 2017 Alluvian &middot; <a href="javascript: doAlert();" id="privacy">Privacy</a> &middot; <a href="javascript: doAlert();" id="terms">Terms</a></p>
+            </footer>
+
+        </div><!-- /.container -->
 
     </body>
-
 </html>

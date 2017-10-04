@@ -1,21 +1,3 @@
-
-// ===== Scroll to Top ====
-$(document).ready(function() {
-    function topScroll() {
-        $('#return-to-top,#nav-home').click(function() {      // When 'Back to Top' is clicked
-            $('body,html').animate({
-                scrollTop : 0                       // Scroll to top of body
-            }, 500);                                // Scroll delay time
-            return false;
-        });
-    }
-    topScroll();
-});
-
-function doAlert(){
-    alert('Under Construction');
-}
-
 var map;
 
 function initialize()
@@ -287,3 +269,20 @@ $(document).ready(function(){
         }
     });
 });
+
+// ===== Scroll to Top ====
+$(document).ready(function() {
+    function topScroll() {
+        $('#return-to-top,#nav-home').click(function() {      // When 'Back to Top' is clicked
+            $('body,html').animate({
+                scrollTop : 0                       // Scroll to top of body
+            }, 500);                                // Scroll delay time
+            return false;
+        });
+    }
+    topScroll();
+});
+
+function doAlert(){
+    alert('Under Construction');
+}
