@@ -9,6 +9,10 @@ function initialize()
     });
 }
 
+$(document).ready(function(){
+  initialize();
+});
+
 //Melbourne CBD Boundary
 function melbourneMap() {
     map = new google.maps.Map(document.getElementById('map'), {

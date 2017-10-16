@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Alluvian - Make Roads Great Again</title>
+        <title>Alluvian - Congestion Relief System</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1  shrink-to-fit=no">
         <meta name="description" content="">
@@ -68,7 +68,7 @@
                 <div class="carousel-item active">
                     <img src="images/road-lights.jpg">
                     <div class="container">
-                        <div class="carousel-caption d-none d-md-block text-left">
+                        <div class="carouselText">
                             <h1>Making Roads Great Again.</h1>
                             <p>Making the world's most liveable city an even better place to live - one road at a time, towards a more cleaner, greener and peaceful world.</p>
                         </div>
@@ -115,22 +115,17 @@
 
             <hr class="featurette-divider">
 
-            <div class="row featurette" id="solutionDIV">
-                <div class="col-md-7 order-md-2">
-                    <h2 class="featurette-heading">How we can reduce the traffic problem? <span class="text-muted">See for yourself.</span></h2>
-                    <p class="lead">
-                    <div class="row">
-                        <div class="col" id="show">Radio Button selection description.</div>
-                        <div class="col">
-                            <p><input type='radio' name='content_type' value='1' />&nbsp;Melbourne CBD Boundary</p>
-                            <p><input type='radio' name='content_type' value='2' />&nbsp;CBD Roundabout</p>
-                            <p><input type='radio' name='content_type' value='3' />&nbsp;Camera Locations</p>
-                            <p><input type='radio' name='content_type' value='4' />&nbsp;Default Map</p>
-                        </div>
+            <div id="solutionDIV">
+                <h2 class="featurette-heading">How we can reduce the traffic problem? <span class="text-muted">See for yourself.</span></h2>
+                <div id="map"></div>
+                <div class="row">
+                    <div class="col" id="show">Select radio buttons on the right to toggle between the maps.</div>
+                    <div class="col">
+                        <p><input type='radio' name='content_type' value='1' />&nbsp;Melbourne CBD Boundary</p>
+                        <p><input type='radio' name='content_type' value='2' />&nbsp;CBD Roundabout</p>
+                        <p><input type='radio' name='content_type' value='3' />&nbsp;Camera Locations</p>
+                        <p><input type='radio' name='content_type' value='4' />&nbsp;Default Map</p>
                     </div>
-                </div>
-                <div class="col-md-5 order-md-1">
-                    <div id="map"></div>
                 </div>
             </div>
 
@@ -166,7 +161,7 @@
             <!-- FOOTER -->
             <footer>
                 <!-- Scroll to Top -->
-                <a href="javascript:topScroll();" class="float-right" id="return-to-top">Back to Top</a>
+                <a href="javascript:topScroll();" class="float-right" id="return-to-top"><i class="fa fa-arrow-up" aria-hidden="true"></i>&nbsp;Back to Top</a>
                 <p>&copy; 2017 Alluvian &middot; <a href="javascript: doAlert();" id="privacy">Privacy</a> &middot; <a href="javascript: doAlert();" id="terms">Terms</a></p>
             </footer>
 
