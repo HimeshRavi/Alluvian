@@ -260,11 +260,11 @@ $(document).ready(function(){
                 break;
             case '2':
                 arrows();
-                $('#show').html("Making Melbourne CBD a huge roundabout.");
+                $('#show').html("Changing the outer roads around the CBD into a massive 6 lane roundabout.");
                 break;
             case '3':
                 cameraMap();
-                $('#show').html("These are the Zone 1 Camera locations in Melbourne CBD.");
+                $('#show').html("Installing cameras at the entry points to the CBD and implement a toll system, where you get charged an entry fee unless you are comuting with at least one passenger.");
                 break;
             case '4':
                 initialize();

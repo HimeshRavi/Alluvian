@@ -36,7 +36,7 @@ body {
 }
 .carouselText {
     position: absolute;
-    top: 60%;
+    top: 50%;
     left: 20%;
     transform: translate(-10%, -20%);
     color: white;
@@ -66,7 +66,7 @@ body {
 ------------------------- */
 
 .featurette-divider {
-    margin: 20px 0; /* Space out the Bootstrap <hr> more */
+    margin: 25px 0; /* Space out the Bootstrap <hr> more */
 }
 
 /* Thin out the marketing headings */
@@ -112,4 +112,29 @@ body {
     flex: 1;
     padding: 1em;
     border: solid;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+.steps {
+    background-color: lightblue;
+    padding: 5px;
+}
+
+.contact_form {
+    border: solid;
+    padding: 1em;
+    margin: 1em;
+}
+#reset{
+    max-width: 30%;
+    font-weight: bold;
+    float: left;
+    margin-left: 20%;
+}
+#submit{
+    max-width: 30%;
+    font-weight: bold;
 }
